@@ -1,0 +1,14 @@
+spring:
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        generate-ddl: false
+        show-sql: false
+    datasource:
+        url: jdbc:postgresql://192.168.33.11/rubrum
+        driver-class-name: org.postgresql.Driver
+        schema: public
+        username: rubrum
+        password: rubrum
+
+server:
+    port: 8001

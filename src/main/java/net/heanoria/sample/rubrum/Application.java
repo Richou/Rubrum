@@ -19,7 +19,7 @@ public class Application {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
         logger.info("============================================");
-        logger.info("==    Lilium Services Layer is running ");
+        logger.info("==    Rubrum Services Layer is running ");
         logger.info("============================================");
     }
 }
