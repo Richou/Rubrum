@@ -9,6 +9,9 @@ spring:
         schema: public
         username: rubrum
         password: rubrum
+    data:
+        elasticsearch:
+            cluster-name: rubrum
 
 server:
     port: 8001

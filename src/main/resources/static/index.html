@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Rubrum</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>Header</header>
+
+    <div id="content"></div>
+    <script>
+        $.get('/api/activities').done(function(data) {
+           $('#content').text(data);
+        });
+    </script>
+</body>
+
+</html>
