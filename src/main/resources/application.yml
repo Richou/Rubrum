@@ -4,9 +4,8 @@ spring:
         generate-ddl: false
         show-sql: false
     datasource:
-        url: jdbc:postgresql://192.168.33.11/rubrum
+        url: jdbc:postgresql://localhost:5432/rubrum
         driver-class-name: org.postgresql.Driver
-        schema: public
         username: rubrum
         password: rubrum
     data:

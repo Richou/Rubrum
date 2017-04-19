@@ -1,16 +1,18 @@
 package net.heanoria.sample.rubrum.controllers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
 public class HelloWorldController {
 
-    @RequestMapping(value = "/hello-world", method = RequestMethod.GET)
+    @GetMapping(value = "/hello-world")
     public @ResponseBody String doGetHelloWorld() {
         return "Hello world !";
+    }
+
+    @GetMapping(value = "/hello/{name}")
+    public @ResponseBody String doGetHelloSomeone(@PathVariable String name) {
+        return "Hello " + name + " !";
     }
 }
